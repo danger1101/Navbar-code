@@ -1,0 +1,118 @@
+:root{ 
+    --primary:#0d6efd; 
+    --dark:#21252f; 
+    --body:#888; 
+    --white:#fff; 
+    --box-shadow:0px 8px 22px rgba(0,0,0,0.1); 
+    --transition:all 0.4 ease; 
+   } 
+   body{ 
+    font-family: Verdana; 
+    line-height: 1.7; 
+    color: var(--body); 
+   } 
+   h1,h2,h3,h4,h5,h6{ 
+    color: var(--dark); 
+    font-weight: 700; 
+   } 
+   a{ 
+    text-decoration: none; 
+    color: var(--dark); 
+   } 
+   img{ 
+    width: 100%; 
+   } 
+   .navbar{ 
+    box-shadow: var(--box-shadow); 
+   } 
+   .navbar .navlink{ 
+    font-size: 14px; 
+    font-weight: 700; 
+   } 
+    
+   .btn{ 
+    padding: 14px 18px; 
+    border-width: 2px; 
+    border-radius: 0; 
+   } 
+   .hero{ 
+    background-image: url(../img/photo5224690268496836082.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    position: relative; 
+    z-index: 2; 
+   } 
+   .hero::after{ 
+    content: ''; 
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background-color: rgb(21, 20, 51, 0.8); 
+    z-index: -1; 
+   } 
+    
+   section{ 
+    padding-top: 120px; 
+    padding-bottom: 120px; 
+   } 
+   .card-effect{ 
+    box-shadow: var(--box-shadow); 
+    background-color: var(--white); 
+    padding: 25px; 
+     
+    transition: var(--transition); 
+    transition: 0.5s; 
+   } 
+    
+   .card-effect:hover{ 
+    box-shadow: none; 
+    transform: translateY(5px); 
+   } 
+   .iconbox{ 
+    width: 54px; 
+    height: 54px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color:var(--primary); 
+    color: var(--white); 
+    font-size: 32px; 
+    border-radius: 100px; 
+    flex:none; 
+    
+   } 
+   .service{ 
+    position: relative; 
+    z-index: 2; 
+    overflow: hidden; 
+   } 
+   .service::after{ 
+    content: ""; 
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    top: -100%; 
+    left: 0; 
+    background-color: var(--primary); 
+    z-index: -1; 
+    transition: var(--primary); 
+    transition: 0.6s; 
+    opacity: 0; 
+   } 
+   .service:hover h5,.service:hover p{ 
+    color: var(--white); 
+   } 
+    
+   .service:hover::after{ 
+    opacity: 1; 
+    top: 0; 
+   } 
+   .col-img{ 
+    background-image: url(../asus-gamer-republic-rog-wallpaper-preview.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    min-height: 400px; 
+   }
